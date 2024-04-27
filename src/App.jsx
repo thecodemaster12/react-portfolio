@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
+import Hero from './pages/Hero'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-red-700 text-center'>Portfolio</h1>
+    <Navbar />
+    <Hero />
+    <Projects />
+    <Contact />
     </>
   )
 }

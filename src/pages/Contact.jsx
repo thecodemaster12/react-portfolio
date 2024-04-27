@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
     <Navbar />
-    <div className='h-screen flex justify-center items-center bg-slate-500'>Contact</div>
+    <div className='h-screen flex justify-center items-center bg-red-500'>Contact</div>
     </>
   )
 }

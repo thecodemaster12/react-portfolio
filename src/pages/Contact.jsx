@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Contact = () => {
   return (
-    <div className='h-screen flex justify-center items-center bg-amber-400'>Contact</div>
+    <>
+    <Navbar />
+    <div className='h-screen flex justify-center items-center bg-slate-500'>Contact</div>
+    </>
   )
 }
 

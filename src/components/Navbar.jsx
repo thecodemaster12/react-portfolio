@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -10,9 +11,9 @@ const Navbar = () => {
             </div>
             {/* Navlinks */}
             <ul className='flex gap-5 md:gap-16 xl:gap-20 capitalize'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><NavLink to='/'>Home</NavLink></li>
+                <li><NavLink to='/projects'>Projects</NavLink></li>
+                <li><NavLink to='/contact'>Contact</NavLink></li>
             </ul>
         </div>
     </nav>

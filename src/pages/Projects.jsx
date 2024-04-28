@@ -1,115 +1,46 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
+import React from "react";
+import Navbar from "../components/Navbar";
+import ProjectCard from "./ProjectCard";
+import Footer from "./Footer";
 
 const Projects = () => {
   return (
     <>
-    <Navbar />
-    <div className='h-auto flex justify-center items-center bg-slate-500 gap-10 flex-wrap pt-'>  
-    <a href="https://www.google.com/" target='_blank'>
-      <Card sx={{ maxWidth: 345, background: '#222', color: 'white' }}>
-        <CardActionArea>
-          <CardMedia
-          component='img'
-          height={140}
-          image='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          />
-          <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="white.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi officia veritatis ut rem hic vero repellat dignissimos iusto optio. Veniam molestiae doloribus odio illum adipisci, repellendus fugit atque eligendi!
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        <Button size="small" className='text-white-950'>
-          Share
-        </Button>
-      </CardActions>
-      </Card>
-      </a>    
-    <a href="https://www.google.com/" target='_blank'>
-      <Card sx={{ maxWidth: 345, background: '#222', color: 'white' }}>
-        <CardActionArea>
-          <CardMedia
-          component='img'
-          height={140}
-          image='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          />
-          <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="white.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi officia veritatis ut rem hic vero repellat dignissimos iusto optio. Veniam molestiae doloribus odio illum adipisci, repellendus fugit atque eligendi!
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        <Button size="small" className='text-white-950'>
-          Share
-        </Button>
-      </CardActions>
-      </Card>
-      </a>    
-    <a href="https://www.google.com/" target='_blank'>
-      <Card sx={{ maxWidth: 345, background: '#222', color: 'white' }}>
-        <CardActionArea>
-          <CardMedia
-          component='img'
-          height={140}
-          image='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          />
-          <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="white.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi officia veritatis ut rem hic vero repellat dignissimos iusto optio. Veniam molestiae doloribus odio illum adipisci, repellendus fugit atque eligendi!
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        <Button size="small" className='text-white-950'>
-          Share
-        </Button>
-      </CardActions>
-      </Card>
-      </a>    
-    <a href="https://www.google.com/" target='_blank'>
-      <Card sx={{ maxWidth: 345, background: '#222', color: 'white' }}>
-        <CardActionArea>
-          <CardMedia
-          component='img'
-          height={140}
-          image='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          />
-          <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="white.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi officia veritatis ut rem hic vero repellat dignissimos iusto optio. Veniam molestiae doloribus odio illum adipisci, repellendus fugit atque eligendi!
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        <Button size="small" className='text-white-950'>
-          Share
-        </Button>
-      </CardActions>
-      </Card>
-      </a>    
-    </div>
+      <Navbar />
+      <div className="min-h-screen bg-[#222] py-20 flex flex-col justify-center items-center">
+        <h1 className="font-montsrrat text-4xl uppercase py-8 text-white">Projects</h1>
+        <div className="w-4/5 m-auto flex gap-6 justify-center items-center flex-wrap">
+        <ProjectCard 
+        imgPath='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title='Project Title'
+        description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae nobis sunt magnam unde dolor veniam commodi laboriosam consequatur quia eius tempora officia perspiciatis et distinctio, quam temporibus error possimus!'
+        projectUrl='https://unsplash.com/photos/a-view-of-the-empire-building-in-new-york-city-XeKh2jlvLtc'
+        />
+        
+        <ProjectCard 
+        imgPath='https://images.unsplash.com/photo-1714151676782-3d37e0847c25?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title='Project Title'
+        description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae nobis sunt magnam unde dolor veniam commodi laboriosam consequatur quia eius tempora officia perspiciatis et distinctio, quam temporibus error possimus!'
+        projectUrl='https://unsplash.com/photos/a-view-of-the-empire-building-in-new-york-city-XeKh2jlvLtc'
+        />
+        <ProjectCard 
+        imgPath='https://images.unsplash.com/photo-1714244322811-f1387dc93909?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title='Project Title'
+        description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae nobis sunt magnam unde dolor veniam commodi laboriosam consequatur quia eius tempora officia perspiciatis et distinctio, quam temporibus error possimus!'
+        projectUrl='https://unsplash.com/photos/a-view-of-the-empire-building-in-new-york-city-XeKh2jlvLtc'
+        />
+        
+        <ProjectCard 
+        imgPath='https://images.unsplash.com/photo-1714151676782-3d37e0847c25?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title='Project Title'
+        description='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis beatae nobis sunt magnam unde dolor veniam commodi laboriosam consequatur quia eius tempora officia perspiciatis et distinctio, quam temporibus error possimus!'
+        projectUrl='https://unsplash.com/photos/a-view-of-the-empire-building-in-new-york-city-XeKh2jlvLtc'
+        />
+        </div>
+      </div>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

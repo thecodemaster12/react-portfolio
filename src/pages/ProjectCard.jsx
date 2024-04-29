@@ -12,7 +12,7 @@ import {
 const ProjectCard = ({imgPath, title, description, projectUrl}) => {
     return (
         <>
-            <Card className="font-satoshi bg-black text-white" sx={{ maxWidth: 350 }}>
+            <Card className="font-satoshi" sx={{ maxWidth: 350 }}>
                 <CardActionArea>
                     <CardMedia className="h-60"
                         component="img"

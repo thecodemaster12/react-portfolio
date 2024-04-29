@@ -4,7 +4,7 @@ import menu from '../menu-lined-240.png'
 
 const Navbar = () => {
   return (
-    <nav className='font-poppins py-4 bg-white bg-opacity-60 fixed top-0 w-full rounded-sm  z-10'>
+    <nav className='font-poppins py-4 bg-black bg-opacity-20 fixed top-0 w-full rounded-sm  z-10'>
         <div className="md:w-4/5 md:m-auto flex justify-between lg:justify-around">
             {/* Logo */}
             <div className="">

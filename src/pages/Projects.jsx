@@ -7,10 +7,11 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen py-20 flex flex-col justify-center items-center">
-        <h1 className="font-montsrrat text-4xl uppercase py-8">Projects</h1>
+      <div className="min-h-[92vh] bg-[#272829] text-white py-20 flex flex-col justify-center items-center">
+        <h1 className="font-heading text-4xl uppercase py-8">Project section</h1>
 
       </div>
+      <Footer />
     </>
   );
 };

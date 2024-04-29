@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        chillax: ['Chillax', 'sans-serif'],
-        montsrrat: ['Montserrat', 'sans-serif'],
+        heading: ['Montserrat', 'sans-serif'],
+        subHeading: ['Poppins', 'sans-serif'],
+        base: ['Satoshi', 'sans-serif'],
+        logoText: ['Chillax', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

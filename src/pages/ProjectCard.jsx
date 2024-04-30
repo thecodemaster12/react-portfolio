@@ -12,7 +12,8 @@ import {
 const ProjectCard = ({imgPath, title, description, projectUrl}) => {
     return (
         <>
-            <Card className="font-satoshi" sx={{ maxWidth: 350 }}>
+        {/* maxWidth: 350  */}
+            <Card className="font-satoshi border border-red-500" sx={{ maxWidth: 300}}>
                 <CardActionArea>
                     <CardMedia className="h-60"
                         component="img"
@@ -29,7 +30,7 @@ const ProjectCard = ({imgPath, title, description, projectUrl}) => {
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" className="text-white-950">
-                        <a href={projectUrl} target="_blank">Demo</a>
+                        <a href={projectUrl} target="_blank">View project</a>
                     </Button>
                 </CardActions>
             </Card>

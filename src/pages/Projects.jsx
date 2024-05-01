@@ -26,7 +26,7 @@ const Projects = () => {
         <ProjectCard 
         imgPath='/project2.png'
         title='Rick & Morty Wiki'
-        description='Explore the ultimate Rick and Morty character compendium!  This comprehensive wiki  catalogs every character from the wacky animated series.'
+        description='This comprehensive wiki catalogs every character from the wacky animated series.'
         projectUrl='https://rick-and-morty-wikis.netlify.app/'
         />
         </div>

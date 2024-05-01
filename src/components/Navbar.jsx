@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu';
 import menu from '../menu-lined-240.png'
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   return (
@@ -17,9 +18,10 @@ const Navbar = () => {
                 <li className='font-base'><NavLink to='/projects'>Projects</NavLink></li>
                 <li className='font-base'><NavLink to='/contact'>Contact</NavLink></li>
             </ul>
-            <a href="">
-              <MenuIcon className='md:hidden' />
-            </a>
+              {/* <MenuIcon className='md:hidden' /> */}
+              <div className="md:hidden block">
+                <MobileMenu />
+              </div>
         </div>
     </nav>
   )

@@ -15,6 +15,7 @@ const Navbar = () => {
             {/* Navlinks */}
             <ul className='gap-5 md:gap-16 xl:gap-20 capitalize hidden md:flex'>
                 <li className='font-base'><NavLink to='/'>Home</NavLink></li>
+                <li className='font-base'><NavLink to='/skills'>Skills</NavLink></li>
                 <li className='font-base'><NavLink to='/projects'>Projects</NavLink></li>
                 <li className='font-base'><NavLink to='/contact'>Contact</NavLink></li>
             </ul>

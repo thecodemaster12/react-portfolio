@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="min-h-[92vh] bg-[#272829] text-white py-20 flex flex-col justify-center items-center">
         <h1 className="font-heading text-4xl uppercase py-8">My Projects</h1>
         {/* <div className="flex gap-5 p-10 justify-center flex-wrap"> */}
-        <div className="p-6 grid justify-center grid-cols-1 gap-10 md:gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="p-6 grid grid-cols-1 gap-10 md:gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <ProjectCard 
           imgPath={project3}
           title='Ramadan Calender'
